@@ -1,0 +1,1291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #15c0c7;
+  --sec-colot: #fff;
+}
+/* sart the top */
+.top {
+  background-color: black;
+}
+
+.top-content {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+}
+/* start the social icon */
+.social-icons {
+  display: flex;
+  text-align: center;
+  margin-right: 50px;
+  list-style: none;
+}
+.icons {
+  color: beige;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 5px;
+  position: relative;
+}
+.icons i:hover {
+  background-color: aliceblue;
+  color: #333333;
+  transition: 0.5s;
+}
+.icons i {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  align-content: center;
+}
+/* end the social icons */
+/* start the top search */
+.top-search {
+  margin: 10px 50px 0 0;
+}
+.searsh {
+  width: 100%;
+  height: 35px;
+  padding-left: 10px;
+  background-color: #4a4e55;
+  color: aliceblue;
+  border: 0;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Merienda", cursive;
+  position: relative;
+}
+#search-icons {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  color: var(--main-color);
+}
+
+#search-icons:hover {
+  color: #ffff;
+  transition: 0.5s;
+}
+/* end the top search */
+
+/* end the top */
+@media screen and (max-width: 767px) {
+  .icons {
+    display: none;
+  }
+  .top-search {
+    width: 100%;
+  }
+}
+
+/* start of nav bar */
+.contaner {
+  width: 90%;
+  margin: auto;
+}
+/* .nav-cont {
+  position: sticky;
+} */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 10px;
+  /* margin-top: 10px; */
+}
+.logo img {
+  width: 150px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+.links {
+  padding: 0 10px;
+}
+
+a {
+  color: #333333;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Merienda", cursive;
+  text-decoration: none;
+}
+
+.active {
+  color: var(--main-color);
+}
+.phone {
+  text-align: right;
+}
+.bars {
+  display: none;
+}
+
+/* the end of nav bar */
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .contaner {
+    width: 80%;
+  }
+  nav {
+    display: none;
+  }
+  .info-nav {
+    display: flex;
+    align-items: center;
+  }
+  .bars {
+    display: block;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .contaner {
+    width: 80%;
+  }
+  nav {
+    display: none;
+  }
+  .info-nav {
+    display: flex;
+    align-items: center;
+  }
+  .bars {
+    display: block;
+    margin-right: 15px;
+  }
+  .phone{
+    display: none;
+  }
+}
+
+/* start main */
+main {
+  background-image: url(../images/slider_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.main-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.full {
+  color: white;
+  font-size: 35px;
+  font-family: "Kaushan Script", cursive;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.p1 {
+  color: white;
+  font-size: 18px;
+  font-family: "Merienda", cursive;
+  text-transform: capitalize;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.submit {
+  color: white;
+  background-color: #15c0c7;
+  width: 120px;
+  height: 40px;
+  border-radius: 30px;
+  font-family: "Kalam", cursive;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+}
+
+.submit:hover {
+  background-color: #ffff;
+  color: #212529;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 896px) {
+  .p1{
+    display: none;
+  }
+}
+
+/* start the section2 */
+/* start the head */
+.thehead {
+  margin: auto;
+  text-align: center;
+  padding-top: 80px;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 25px;
+  color: #32352e;
+  font-weight: 300;
+  font-family: "Merienda", cursive;
+}
+
+.services h2 {
+  color: #32352e;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Kaushan Script", cursive;
+  margin: 10px 0 8px;
+  position: relative;
+}
+
+.services h2::before{
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #15c0c7;
+  border: #ffffff 2px solid;
+  z-index: 2;
+  top: 55px;
+  left: 50%;
+  transform: translatex(-50%) rotate(45deg);
+}
+
+.services h2::after{
+  position: absolute;
+  content: "";
+  width: 180px;
+  height: 3px;
+  background-color: #15c0c7;
+  top: 62px;
+  left: 50%;
+  transform: translatex(-50%);
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  0%{
+    width: 150px;
+  }
+  50%{
+    width: 0;
+  }
+  100%{
+    width: 150px;
+  }
+}
+
+/* end thehed */
+
+/* start the servicescontent */
+
+.services-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+ 
+  text-align: center;
+  margin-bottom: 25px;
+ 
+}
+
+.services-card {
+  width: 18%;
+}
+
+.services-icons {
+ 
+  color: var(--sec-colot);
+  background-color: #15c0c7;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.services-icons i {
+  line-height: 70px;
+}
+.h-services {
+  color: #32352e;
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: "Kaushan Script", cursive;
+  
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #b8b8b8;
+  margin-bottom: 15px;
+  
+}
+.p-services {
+  color: #b8b8b8;
+  font-size: 16px;
+  font-family: "Merienda", cursive;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* start of button */
+.view {
+  display: block;
+  color: white;
+  background-color: #15c0c7;
+  width: 100px;
+  height: 35px;
+  margin: auto;
+  border-radius: 30px;
+  font-family: "Kalam", cursive;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  margin-top: 40px;
+}
+
+.view:hover {
+  background-color: #212529;
+  color: #ffff;
+  transition: 0.5s;
+}
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .services-cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .services-card {
+    width: 45%;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 766px) {
+  .services-cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .services-card {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .hr {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+}
+
+/* end of button */
+/* end of the servicescontent */
+/* end the section2 */
+
+/* start of section3 */
+
+
+.section3-cont {
+  background-image: url(../images/case.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  padding-top: 50px;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.section3-h {
+  color: beige;
+  text-align: center;
+  margin: auto;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Kaushan Script", cursive;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.section3-h::before{
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #15c0c7;
+  border: #ffffff 2px solid;
+  z-index: 2;
+  top: 55px;
+  left: 50%;
+  transform: translatex(-50%) rotate(45deg);
+}
+
+.section3-h::after{
+  position: absolute;
+  content: "";
+  width: 180px;
+  height: 3px;
+  background-color: #15c0c7;
+  top: 62px;
+  left: 50%;
+  transform: translatex(-50%);
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  0%{
+    width: 150px;
+  }
+  50%{
+    width: 0;
+  }
+  100%{
+    width: 150px;
+  }
+}
+
+.p-section3 {
+  color: #ffff;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  padding: 30px 0 20px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Merienda", cursive;
+}
+
+.p2-section3 {
+  color: #ffff;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  padding: 15px 0 50px;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Merienda", cursive;
+}
+/* the start of the button */
+.our-cases {
+  color: white;
+  background-color: #15c1c700;
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+ margin: auto;
+ display: block;
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  outline: 0;
+  border: 1px white solid;
+
+}
+
+.our-cases:hover {
+  background-color: #ffff;
+  color: #32352e;
+  transition: 0.5s;
+}
+/* the end of the button */
+/* end of section3 */
+
+@media screen and (max-width: 767px) {
+  .p2-section3 {
+    display:none;
+  }
+
+  .section3-h{
+    font-size: 31px;
+  }
+}
+
+/* start of section4 */
+.our-bowse{
+  text-transform: capitalize;
+  font-size: 25px;
+  color: #32352e;
+  font-weight: 300;
+  font-family: "Merienda", cursive;
+}
+.business-tips{
+  color: #32352e;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Kaushan Script", cursive;
+  margin: 10px 0 8px;
+  position: relative;
+}  
+.business-tips::before{
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #15c0c7;
+  border: #ffffff 2px solid;
+  z-index: 2;
+  top: 55px;
+  left: 50%;
+  transform: translatex(-50%) rotate(45deg);
+}
+
+.business-tips::after{
+  position: absolute;
+  content: "";
+  width: 180px;
+  height: 3px;
+  background-color: #15c0c7;
+  top: 62px;
+  left: 50%;
+  transform: translatex(-50%);
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  0%{
+    width: 150px;
+  }
+  50%{
+    width: 0;
+  }
+  100%{
+    width: 150px;
+  }
+}
+.business-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-top: 60px;
+}
+
+.business-card {
+  width: 31%;
+  height: 41%;
+  margin: 0 20px 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image {
+  overflow: hidden;
+  height: 45%;
+}
+img {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+.image:hover img {
+  transform: scale(1.5);
+}
+
+.imag-info {
+  padding: 10px;
+}
+
+.numder {
+  color: #15c0c7;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Merienda", cursive;
+}
+.by {
+  color: #7777;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Merienda", cursive;
+}
+.admin {
+  color: #7777;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Merienda", cursive;
+}
+
+.admin:hover {
+  color: #15c0c7;
+  transition: 0.5s;
+}
+
+.h-info {
+  color: #32352e;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Kaushan Script", cursive;
+  margin: 20px 0 15px;
+}
+
+.p2-info {
+  color: #7777;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Merienda", cursive;
+  padding-top: 10px;
+  line-height: 1.2;
+}
+
+.view-more {
+  color: white;
+  background-color: #15c0c7;
+  width: 90px;
+  height: 35px;
+  margin-left: 50px;
+  margin-top: 30px;
+  border: 1px white solid;
+  border-radius: 30px;
+  font-family: "Kalam", cursive;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+ 
+
+  outline: 0;
+  border: 0;
+}
+
+.view-more:hover {
+  background-color: #32353e;
+  color: #ffff;
+  transition: 0.5s;
+}
+/* end of section4 */
+@media screen and (max-width: 989px) and (min-width: 767px) {
+   .contaner{
+    width: 65%;
+   }
+  .business-cards {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  .business-card {
+    width: 35%;
+    margin-top: 20px;
+
+
+  }
+}
+ 
+@media screen and (max-width: 766px) {
+ .business-cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+   
+  
+   
+ }
+ .business-card {
+   width: 100%;
+    margin-top: 20px;
+
+  
+  
+ }
+}
+
+
+
+/* start of section5 */
+
+.section5 {
+  background-image: url(../images/case21.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 150px;
+  text-align: center;
+  background-attachment: fixed;
+}
+/* start of section5-heads */
+.h3-section5 {
+  color: #ffff;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "Merienda", cursive;
+  margin: 50px 0 20px 0;
+  padding-top: 90px;
+}
+
+.h2-section5 {
+  color: #ffff;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Kaushan Script", cursive;
+  position: relative;
+}
+.h2-section5::before{
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #212529;
+  top: 55px;
+  left: 50%;
+  transform: translatex(-50%) rotate(45deg);
+  z-index: 2;
+  border: white 2px solid;
+}
+.h2-section5::after{
+  position: absolute;
+  content: "";
+  width: 180px;
+  height: 3px;
+  background-color: white;
+  top: 62px;
+  left: 50%;
+  transform: translatex(-50%);
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  0%{
+    width: 150px;
+  }
+  50%{
+    width: 0;
+  }
+  100%{
+    width: 150px;
+  }
+}
+
+/* start of section5-heads */
+
+
+/* start of section5-content */
+.section5-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  /* padding-top: 20px; */
+}
+
+.section5-cont {
+  width: 20%;
+}
+
+.number {
+  background-color: #15c1c700;
+  border: #ffff 1px solid;
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  margin: auto;
+  margin-bottom: 20px;
+  /* align-content: center; */
+  /* margin-left: 55px; */
+  color: #ffff;
+  font-size: 40px;
+  /* font-weight: 500; */
+  font-family: "Merienda", cursive;
+}
+.number-info {
+  color: #ffff;
+  font-size: 14px;
+  /* font-weight: 900; */
+  font-family: "Merienda", cursive;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 992px) and (min-width:767px){
+  .section5-content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section5-cont{
+    width: 50%;
+  }
+  .h2-section5{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 766px) {
+  .section5-content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section5-cont{
+    width: 100%;
+  }
+  .h2-section5{
+    font-size: 23px;
+  }
+}
+/* end of section5-content */
+/* end of section5 */
+/* start of section6 */
+/* start of section6-heads */
+.section6-heads {
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.h3-section6 {
+  color: #32353e;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "Merienda", cursive;
+  margin: 0 0 8px;
+}
+
+.h2-section6 {
+  color: #32353e;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Kaushan Script", cursive;
+  margin: 5px 0 8px;
+  position: relative;
+}
+
+.h2-section6::before{
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color:#15c0c7;
+  top: 55px;
+  left: 50%;
+  transform: translatex(-50%) rotate(45deg);
+  z-index: 2;
+  border: white 2px solid;
+}
+.h2-section6::after{
+  position: absolute;
+  content: "";
+  width: 180px;
+  height: 3px;
+  background-color:#15c0c7;
+  top: 62px;
+  left: 50%;
+  transform: translatex(-50%);
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  0%{
+    width: 150px;
+  }
+  50%{
+    width: 0;
+  }
+  100%{
+    width: 150px;
+  }
+}
+/* end of section6-heads */
+/* start of clients-cards  */
+.clients-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+}
+/* start of client-card  */
+.client-card {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+/* start of client-img  */
+.client-img {
+  width: 100px;
+  height: 100px;
+  border: #15c1c700 2px solid;
+  border-radius: 50px;
+  /* position: absolute;
+  top: 85px; */
+}
+
+/* end of client-img */
+
+/* start of client-com */
+.client-com {
+  width: 80%;
+  color: #777777;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Merienda", cursive;
+  margin: 0 0 20px 30px;
+  line-height: 1.3;
+}
+
+/* end of client-com  */
+
+/* start of client-name  */
+.client-name {
+  width: 80%;
+  color: #32353e;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Merienda", cursive;
+  margin-left: 30px;
+}
+/* end of client-nam */
+/* end of client-card  */
+/* end of clients-cards  */
+/* end of section6 */
+
+@media screen and (max-width: 990px){
+  .clients-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-block: 10px;
+ 
+  }
+  .client-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-block: 10px;
+    text-align: center;
+    align-content: center;
+  }
+  .client-com{
+    width: 100%;
+  }
+  .h2-section6{
+    font-size: 30px;
+  }
+}
+/* start of section7 */
+
+.section-cont {
+  margin-top: 50px;
+
+  text-align: center;
+  background-image: url(../images/revenue.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* start of section7-heads */
+
+.section7-heads {
+  padding-top: 100px;
+}
+
+.h3-section7 {
+  color: #ffff;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Merienda", cursive;
+  margin: 0 0 8px;
+}
+
+.h2-section7 {
+  color: #ffff;
+  text-transform: capitalize;
+  font-size: 45px;
+  font-weight: 600;
+  font-family: "Kaushan Script", cursive;
+  margin: 5px 0 8px;
+  position: relative;
+}
+.h2-section7::before{
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #212529;
+  top: 55px;
+  left: 50%;
+  transform: translatex(-50%) rotate(45deg);
+  z-index: 2;
+  border: white 2px solid;
+}
+.h2-section7::after{
+  position: absolute;
+  content: "";
+  width: 180px;
+  height: 3px;
+  background-color: white;
+  top: 62px;
+  left: 50%;
+  transform: translatex(-50%);
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  0%{
+    width: 150px;
+  }
+  50%{
+    width: 0;
+  }
+  100%{
+    width: 150px;
+  }
+}
+/* end of section7-heads */
+
+/* start the button */
+.learn-more {
+  color: white;
+  background-color: #15c1c700;
+  width: 120px;
+  height: 40px;
+  border-radius: 30px;
+  outline: 0;
+  border: 1px white solid;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.learn-more:hover {
+  background-color: #ffff;
+  color: #32352e;
+  transition: 0.5s;
+}
+/* end the button */
+/* end of section7 */
+@media screen and (max-width: 990px){
+  .h3-section7{
+    font-size:20px;
+  }
+
+  .h2-section7{
+    font-size: 24px;
+  }
+}
+/* start of section8 */
+/* start of section8-heads */
+.section8-heads {
+  margin-top: 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.h3-section8 {
+  color: #32353e;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Merienda", cursive;
+  margin: 0 0 8px;
+}
+
+.h2-section8 {
+  color: #32353e;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Kaushan Script", cursive;
+  margin: 5px 0 30px;
+  position: relative;
+}
+
+.h2-section8::before{
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color:#15c0c7;
+  top: 55px;
+  left: 50%;
+  transform: translatex(-50%) rotate(45deg);
+  z-index: 2;
+  border: white 2px solid;
+}
+.h2-section8::after{
+  position: absolute;
+  content: "";
+  width: 180px;
+  height: 3px;
+  background-color:#15c0c7;
+  top: 62px;
+  left: 50%;
+  transform: translatex(-50%);
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  0%{
+    width: 150px;
+  }
+  50%{
+    width: 0;
+  }
+  100%{
+    width: 150px;
+  }
+}
+/* end of section8-heads */
+/* start of the  form */
+
+.form {
+  text-align: center;
+  padding: 30px;
+  
+}
+.form .select,
+.user-info {
+  margin: auto;
+  display: block;
+  box-sizing: border-box;
+  padding: 16px;
+  margin-top: 16px;
+}
+label {
+  color: #32353e;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Merienda", cursive;
+  margin: 0 0 15px;
+  /* position: absolute;
+  top:0%;
+  left: 35%;
+  transform: translate(35%,35%); */
+}
+
+.select {
+  width: 50%;
+  height: 50px;
+  color: #000;
+  background-color: #f6f6f6;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Merienda", cursive;
+  display: block;
+  border: 0;
+  outline: 0;
+ 
+}
+
+.user-info {
+  width: 50%;
+  height: 50px;
+  color: #000;
+  background-color: #f6f6f6;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Merienda", cursive;
+  border: 0;
+  outline: 0;
+  display: block;
+}
+/* end of the  form */
+/* start the button */
+.click {
+  color: white;
+  background-color: #15c0c7;
+  width: 120px;
+  height: 30px;
+  border-radius: 30px;
+  outline: 0;
+  border: 1px white solid;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  
+}
+
+.click:hover {
+  background-color: #32353e;
+  color: #ffff;
+  transition: 0.5s;
+}
+/* end the button */
+/* end of section8 */
+@media screen and (max-width: 766px) and (min-width:489px){
+
+.select .user-info {
+  width: 40%;
+}
+
+
+}
+@media screen and (max-width: 488px) and (min-width:378px){
+
+  .select .user-info {
+    width: 20%;
+  }
+   
+  }
+
+
+
+  
+
+
+/* start of footer */
+/* start of footer-cont */
+footer {
+  text-align: center;
+  background-color: #212529;
+  padding-block: 25px;
+}
+footer img {
+  width: 15%;
+  margin-bottom: 10px;
+}
+.p-foot,
+.a-foot {
+  color: #ffff;
+  font-family: "Merienda", cursive;
+}
+.a-foot:hover {
+  color: var(--main-color);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* end of footer */
+/* end of footer-cont */
